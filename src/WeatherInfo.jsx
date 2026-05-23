@@ -31,7 +31,7 @@ export default function WeatherInfo({info}) {
                     <Typography variant="body2" sx={{ color: 'text.secondary' }}>
 
                         <div>Temperature : {info.temp}&deg; C</div>
-                        <div>Feels : {info.feels_like}&deg; C</div>
+                        <div>Feels Like : {info.feels_like}&deg; C</div>
                         <div>Min Temp : {info.temp_min}&deg; C</div>
                         <div>Max Temp : {info.temp_max}&deg; C</div>
                         <div>Humidity : {info.humidity}</div>
