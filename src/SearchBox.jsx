@@ -9,7 +9,7 @@ export default function SearchBox({updateInfo}) {
     let[error, setError] = useState(false);
 
     const API_URL = "https://api.weatherapi.com/v1/current.json"
-    const API_KEY = "9af80f54fb7346d39be161016261805";
+    const API_KEY = "1420bb14cfa2407d816103318262905";
 
     let getWeatherInfo = async() => {
         try{
