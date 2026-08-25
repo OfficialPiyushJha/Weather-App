@@ -1,4 +1,105 @@
-*{
-    color : black;
-    margin-bottom: 25px; ;
+/* SEARCH BOX */
+
+.search-wrapper {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.search-title {
+  color: #8f9db2;
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.search-form .MuiTextField-root {
+  flex: 1;
+}
+
+.search-form .MuiOutlinedInput-root {
+  height: 58px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.07);
+  color: #ffffff;
+  backdrop-filter: blur(15px);
+}
+
+.search-form .MuiOutlinedInput-root:hover {
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.search-form .MuiOutlinedInput-root.Mui-focused {
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.15);
+}
+
+.search-form .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+.search-form .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.search-form .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #7168ff;
+}
+
+.search-form .MuiOutlinedInput-input {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.search-form .MuiOutlinedInput-input::placeholder {
+  color: #7f8da1;
+  opacity: 1;
+}
+
+.search-form .MuiInputLabel-root {
+  color: #8795aa;
+}
+
+.search-form .MuiInputLabel-root.Mui-focused {
+  color: #8d85ff;
+}
+
+.search-form .MuiButton-root {
+  height: 58px;
+  min-width: 125px;
+  padding: 0 25px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #6c63ff, #8b7cff);
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: none;
+  box-shadow: 0 12px 30px rgba(108, 99, 255, 0.28);
+}
+
+.search-form .MuiButton-root:hover {
+  background: linear-gradient(135deg, #7b72ff, #978cff);
+}
+
+.search-error {
+  margin: 10px 5px 0;
+  color: #ff7d8d;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-form .MuiButton-root,
+  .search-form .MuiTextField-root {
+    width: 100%;
+  }
 }
